@@ -1,5 +1,4 @@
 language: java
 
 script:
-
-- cd lab1/lab01; mvn test
+ - cd lab1/lab01; mvn test
