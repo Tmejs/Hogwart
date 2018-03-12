@@ -90,7 +90,7 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.deleteNauczyciel(nauczyciel));
 
         //Sprawdzenie czy nie usuneliśmy wszystkich
-        assertNotNull(nauczycielManager.getAllPersons());
+        assertFalse(nauczycielManager.getAllNauczyciels().isEmpty());
     }
 
     @Test

@@ -39,5 +39,5 @@ public interface NauczycielManager {
     
     public Boolean deleteNauczyciel(Nauczyciel nauczyciel);
     
-    public List<Nauczyciel> getAllPersons();
+    public List<Nauczyciel> getAllNauczyciels();
 }
