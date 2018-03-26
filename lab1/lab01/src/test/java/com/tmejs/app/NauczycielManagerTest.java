@@ -19,6 +19,7 @@ package com.tmejs.app;
 import com.tmejs.db.domain.Nauczyciel;
 
 import com.tmejs.db.service.NauczycielManager;
+import com.tmejs.db.service.NauczycielManagerImpl;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -26,32 +27,38 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.sql.SQLException;
+import org.junit.Before;
 
 /**
  *
  * @author Tmejs
  */
-@Ignore
 @RunWith(JUnit4.class)
 public class NauczycielManagerTest {
 
     NauczycielManager nauczycielManager;
 
     public NauczycielManagerTest() throws SQLException {
-        String url = "jdbc:hsqldb:hsql://localhost/workdb";
-        nauczycielManager = null;
+//        String url = "jdbc:hsqldb:hsql://localhost/workdb";
+
+    }
+
+    @Before
+    public void initRepository() throws Exception {
+        nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
     }
 
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
-        nauczyciel.Imie = "Imie";
-        nauczyciel.Nazwisko = "Nazwisko";
-        assertNotNull(nauczycielManager.addNauczyciel(nauczyciel));
+        nauczyciel.Imie = "addImie";
+        nauczyciel.Nazwisko = "addNaziwso";
+        Integer id = nauczycielManager.addNauczyciel(nauczyciel);
+        System.out.println("ID:  " + id);
+        assertNotNull(id);
 
         //Sprawdzenie czy poprawnie dodany
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(Long.getLong("1"));
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(Long.decode("44"));
         assertNotNull(newNauczyciel);
 
     }
@@ -59,25 +66,33 @@ public class NauczycielManagerTest {
     @Test
     public void checkUpdating() {
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
-        nauczyciel.Imie = "Imie";
-        nauczyciel.Nazwisko = "Nazwisko";
-
+        nauczyciel.Imie = "addImieUpdate";
+        nauczyciel.Nazwisko = "addNaziwsoUpdate";
+        Integer id = nauczycielManager.addNauczyciel(nauczyciel);
+        
+        
         //Pobranie iinego nauczyciel an potrzeby testu
-        Nauczyciel testNauczyciel = nauczycielManager.getNauczyciel(Long.getLong("2"));
+        Nauczyciel testNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
+        testNauczyciel.Imie = testNauczyciel.Imie + "pUpdate";
+
+        //Kontrolny do sprawdzenia czy nie za duzo update
+        Nauczyciel newNauczycielTest = new Nauczyciel();
+        newNauczycielTest.Imie = "testUpdate";
+        newNauczycielTest.Nazwisko = "testUpate";
+        Integer newId = nauczycielManager.addNauczyciel(newNauczycielTest);
 
         //Update
-        assertTrue(nauczycielManager.updateNauczyciel(nauczyciel));
+        assertTrue(nauczycielManager.updateNauczyciel(testNauczyciel));
 
         //Pobranie nauczyciela w celu sprawdzenia czy poszedł update
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
+        Nauczyciel newNauczycielTestToTest = nauczycielManager.getNauczyciel(newId.longValue());
 
         //Sprawdzenie update
-        assertEquals(nauczyciel, newNauczyciel);
+        assertEquals(testNauczyciel.Imie, newNauczyciel.Imie);
 
-        //Sprawdzenie innego losowego czy nie zosatły zmienione dane
-        Nauczyciel newTestNauczyciel = nauczycielManager.getNauczyciel(Long.getLong("2"));
-        assertEquals(testNauczyciel, newTestNauczyciel);
+        //Sprawdzenie czy nie update innychpozycji
+        assertEquals(newNauczycielTest.Imie, newNauczycielTestToTest.Imie);
 
     }
 
@@ -98,15 +113,17 @@ public class NauczycielManagerTest {
 
         //Dodajemu nowego nauczyciela
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
-        nauczyciel.Imie = "Imie";
-        nauczyciel.Nazwisko = "Nazwisko";
-        assertNotNull(nauczycielManager.addNauczyciel(nauczyciel));
 
+        nauczyciel.Imie = "ImieGet";
+        nauczyciel.Nazwisko = "NazwiskoGet";
+        Integer id = nauczycielManager.addNauczyciel(nauczyciel);
+        assertNotNull(id);
         //Sprawdzenie czy go zwraca
-        assertNotNull(nauczycielManager.getNauczyciel(nauczyciel.id));
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
+        assertNotNull(newNauczyciel);
 
-        assertEquals(nauczycielManager.getNauczyciel(nauczyciel.id), nauczyciel);
+        assertEquals(nauczyciel.Imie, newNauczyciel.Imie);
+        assertEquals(nauczyciel.Nazwisko, newNauczyciel.Nazwisko);
         //Sprawdzeonie czy jest taki sam jak wcześniej dodany
     }
 
