@@ -56,14 +56,16 @@ public class NauczycielManagerImpl implements NauczycielManager {
         PreparedStatement ps = connection.prepareStatement("CREATE DATABASE databasename");
         int result = ps.executeUpdate();
     }
+    
+    
     private static Connection getConnection(String database, String login, String password) throws Exception {
         // This will load the MySQL driver, each DB has its own driver
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-        } catch (Exception e) {
-            throw e;
-        }
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//
+//        } catch (Exception e) {
+//            throw e;
+//        }
         // Setup the connection with the DB
         return DriverManager
                 .getConnection("jdbc:hsqldb:hsql://localhost/workdb");
