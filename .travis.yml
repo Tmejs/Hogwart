@@ -1,10 +1,11 @@
-language: java
 
-script:
- - cd lab1/lab01; mvn test
-
- services:
+services:
   - mysql
   
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS wordkb;'
+ 
+ language: java
+
+script:
+ - cd lab1/lab01; mvn test
