@@ -43,13 +43,12 @@ public class NauczycielManagerImpl implements NauczycielManager {
 
     public NauczycielManagerImpl(String database, String login, String password) throws Exception {
         dbName = database;
-        setConnection(getConnection(database, login, password));
+        connection = getConnection(database, login, password);
         if (!isDatabaseReady()) {
 //            createDatabase();
             createTables();
-            
         }
-
+        setConnection(connection);
     }
 
     
@@ -106,10 +105,8 @@ public class NauczycielManagerImpl implements NauczycielManager {
 
     @Override
     public void setConnection(Connection connection) throws SQLException {
-        this.connection = connection;
-
         addNauczycielStmt = connection.
-                prepareStatement("INSERT INTO "
+                    prepareStatement("INSERT INTO "
                         + dbName + "." + "Nauczyciel (imie, nazwisko) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
 
         getAllNauczycielsStmt = connection.
