@@ -45,11 +45,17 @@ public class NauczycielManagerImpl implements NauczycielManager {
         dbName = database;
         setConnection(getConnection(database, login, password));
         if (!isDatabaseReady()) {
+//            createDatabase();
             createTables();
         }
 
     }
 
+    
+    public void createDatabase() throws SQLException{
+        PreparedStatement ps = connection.prepareStatement("CREATE DATABASE databasename");
+        int result = ps.executeUpdate();
+    }
     private static Connection getConnection(String database, String login, String password) throws Exception {
         // This will load the MySQL driver, each DB has its own driver
         try {
