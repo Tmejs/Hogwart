@@ -66,8 +66,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
         }
         // Setup the connection with the DB
         return DriverManager
-                .getConnection("jdbc:mysql://localhost/" + database + "?"
-                        + "user=" + login + "&password=" + password);
+                .getConnection("jdbc:hsqldb:hsql://localhost/workdb");
     }
 
     public NauczycielManagerImpl() throws Exception {
