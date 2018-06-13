@@ -64,7 +64,7 @@ public class NauczycielManagerMockTest {
                 .thenReturn(insertStatementMock);
         when(connectionMock.prepareStatement("SELECT id, imie, nazwisko FROM Nauczyciel")).thenReturn(selectStatementMock);
         manager = new NauczycielManagerImpl();
-        manager.setConnection(connectionMock);
+        ((NauczycielManagerImpl) manager).connection = connectionMock;
         verify(connectionMock).prepareStatement("INSERT INTO Nauczyciel (id,imie, nazwisko) VALUES (?,?, ?)");
         verify(connectionMock).prepareStatement("SELECT id, name, yob FROM Nauczyciel");
     }

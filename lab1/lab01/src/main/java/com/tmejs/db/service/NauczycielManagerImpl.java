@@ -32,7 +32,7 @@ import java.util.List;
  */
 public class NauczycielManagerImpl implements NauczycielManager {
 
-    private Connection connection;
+    public Connection connection;
     public String dbName;
 
     private PreparedStatement addNauczycielStmt;
