@@ -45,7 +45,7 @@ public class NauczycielManagerTest {
 
     @Before
     public void initRepository() throws Exception {
-        nauczycielManager = new NauczycielManagerImpl("workdb", "travis", "root");
+        nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
     }
 
     @Test
