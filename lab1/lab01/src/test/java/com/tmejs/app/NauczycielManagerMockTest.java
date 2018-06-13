@@ -19,7 +19,9 @@ package com.tmejs.app;
 import com.tmejs.db.domain.Nauczyciel;
 import com.tmejs.db.service.NauczycielManager;
 import com.tmejs.db.service.NauczycielManagerImpl;
+
 import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -30,6 +32,7 @@ import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+
 import java.sql.*;
 
 import java.sql.SQLException;
@@ -40,7 +43,6 @@ import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 /**
- *
  * @author Tmejs
  */
 @RunWith(MockitoJUnitRunner.class)
@@ -52,6 +54,9 @@ public class NauczycielManagerMockTest {
     Connection connectionMock;
 
     @Mock
+    NauczycielManager managerMock;
+
+    @Mock
     PreparedStatement insertStatementMock;
 
     @Mock
@@ -60,13 +65,17 @@ public class NauczycielManagerMockTest {
     @Before
     public void setupDatabase() throws SQLException {
 
-        when(connectionMock.prepareStatement("INSERT INTO Nauczyciel (id,imie, nazwisko) VALUES (?,?, ?)"))
-                .thenReturn(insertStatementMock);
-        when(connectionMock.prepareStatement("SELECT id, imie, nazwisko FROM Nauczyciel")).thenReturn(selectStatementMock);
+        when(connectionMock.prepareStatement("INSERT INTO Nauczyciel (id,imie,nazwisko) VALUES (?,?,?)")).thenReturn(insertStatementMock);
+        when(connectionMock.prepareStatement("SELECT * FROM Nauczyciel")).thenReturn(selectStatementMock);
+
         manager = new NauczycielManagerImpl();
-        ((NauczycielManagerImpl) manager).connection = connectionMock;
-        verify(connectionMock).prepareStatement("INSERT INTO Nauczyciel (id,imie, nazwisko) VALUES (?,?, ?)");
-        verify(connectionMock).prepareStatement("SELECT id, imie, nazwisko FROM Nauczyciel");
+        managerMock = mock(NauczycielManagerImpl.class);
+        manager.setConnection(connectionMock);
+
+//        ((NauczycielManagerImpl) manager).connection = connectionMock;
+
+        verify(connectionMock).prepareStatement("INSERT INTO Nauczyciel (id,imie,nazwisko) VALUES (?,?,?)");
+        verify(connectionMock).prepareStatement("SELECT * FROM Nauczyciel");
     }
 
     @Test
@@ -75,12 +84,14 @@ public class NauczycielManagerMockTest {
 
         Nauczyciel nauczyciel = new Nauczyciel();
         nauczyciel.id = 1;
-        nauczyciel.Imie = "Imie";
-        nauczyciel.Nazwisko = "Nazwisko";
-        assertEquals(1, manager.addNauczyciel(nauczyciel));
+        nauczyciel.Imie = "imie";
+        nauczyciel.Nazwisko = "nazwisko";
+        manager.addNauczyciel(nauczyciel);
+
+//        assertEquals(1, manager.addNauczyciel(nauczyciel));
         verify(insertStatementMock, times(1)).setInt(1, 1);
-        verify(insertStatementMock, times(1)).setString(2, "Imie");
-        verify(insertStatementMock, times(1)).setString(3, "Nazwisko");
+        verify(insertStatementMock, times(1)).setString(2, "imie");
+        verify(insertStatementMock, times(1)).setString(3, "nazwisko");
         verify(insertStatementMock).executeUpdate();
     }
 
@@ -133,8 +144,8 @@ public class NauczycielManagerMockTest {
 
         Nauczyciel nauczyciel = new Nauczyciel();
         nauczyciel.id = 1;
-        nauczyciel.Imie = "Imie";
-        nauczyciel.Nazwisko = "Nazwisko";
+        nauczyciel.Imie = "imie";
+        nauczyciel.Nazwisko = "nazwisko";
         assertEquals(1, manager.addNauczyciel(nauczyciel));
 
         inorder.verify(insertStatementMock, times(1)).setInt(1, 1);

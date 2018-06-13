@@ -6,7 +6,7 @@ package com.tmejs.db.domain;
  */
 public class Nauczyciel {
 
-    public long id;
+    public Integer id;
     public String Imie;
     public String Nazwisko;
 

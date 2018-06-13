@@ -105,10 +105,10 @@ public class NauczycielManagerImpl implements NauczycielManager {
     public void setConnection(Connection connection) throws SQLException {
         addNauczycielStmt = connection.
                 prepareStatement("INSERT INTO "
-                        + "Nauczyciel (id,imie, nazwisko) VALUES (?, ?, ?)");
+                        + "Nauczyciel (id,imie,nazwisko) VALUES (?,?,?)");
 
         getAllNauczycielsStmt = connection.
-                prepareStatement("select * from "
+                prepareStatement("SELECT * FROM "
                         + "Nauczyciel");
         updateNauczycielsStmt = connection.
                 prepareStatement("update "
@@ -127,7 +127,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     public int addNauczyciel(Nauczyciel person) {
         int count = 0;
         try {
-            addNauczycielStmt.setLong(1, person.id);
+            addNauczycielStmt.setInt(1, (int) person.id);
             addNauczycielStmt.setString(2, person.Imie);
             addNauczycielStmt.setString(3, person.Nazwisko);
             count = addNauczycielStmt.executeUpdate();
@@ -190,7 +190,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
             ResultSet rs = getNauczycielStmt.executeQuery();
 
             while (rs.next()) {
-                p.id = rs.getLong("id");
+                p.id = (int) rs.getLong("id");
                 p.Imie = rs.getString("imie");
                 p.Nazwisko = rs.getString("nazwisko");
             }

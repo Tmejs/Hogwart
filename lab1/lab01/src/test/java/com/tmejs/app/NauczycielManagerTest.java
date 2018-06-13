@@ -1,41 +1,41 @@
-/*
- * Copyright (C) 2018 Tmejs
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-package com.tmejs.app;
-
-import com.tmejs.db.domain.Nauczyciel;
-
-import com.tmejs.db.service.NauczycielManager;
-import com.tmejs.db.service.NauczycielManagerImpl;
-import static org.junit.Assert.*;
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-import java.sql.SQLException;
-import org.junit.Before;
-
-/**
- *
- * @author Tmejs
- */
-@RunWith(JUnit4.class)
-public class NauczycielManagerTest {
-    
+///*
+// * Copyright (C) 2018 Tmejs
+// *
+// * This program is free software: you can redistribute it and/or modify
+// * it under the terms of the GNU General Public License as published by
+// * the Free Software Foundation, either version 3 of the License, or
+// * (at your option) any later version.
+// *
+// * This program is distributed in the hope that it will be useful,
+// * but WITHOUT ANY WARRANTY; without even the implied warranty of
+// * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// * GNU General Public License for more details.
+// *
+// * You should have received a copy of the GNU General Public License
+// * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// */
+//package com.tmejs.app;
+//
+//import com.tmejs.db.domain.Nauczyciel;
+//
+//import com.tmejs.db.service.NauczycielManager;
+//import com.tmejs.db.service.NauczycielManagerImpl;
+//import static org.junit.Assert.*;
+//import org.junit.Ignore;
+//import org.junit.Test;
+//import org.junit.runner.RunWith;
+//import org.junit.runners.JUnit4;
+//
+//import java.sql.SQLException;
+//import org.junit.Before;
+//
+///**
+// *
+// * @author Tmejs
+// */
+//@RunWith(JUnit4.class)
+//public class NauczycielManagerTest {
+//    
 //    NauczycielManager nauczycielManager;
 //    Nauczyciel nauczyciel;
 //    
@@ -139,4 +139,4 @@ public class NauczycielManagerTest {
 //        assertEquals(nauczyciel.Nazwisko, newNauczyciel.Nazwisko);
 //    }
 //    
-}
+//}
