@@ -10,8 +10,17 @@ public class Nauczyciel {
     public String Imie;
     public String Nazwisko;
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Nauczyciel) {
+            return this.equals((Nauczyciel) obj);
+        } else {
+            return super.equals(obj);
+        }
+    }
+
     public Boolean equals(Nauczyciel obj) {
-        return id == ((Nauczyciel) obj).id && Imie.equalsIgnoreCase(((Nauczyciel) obj).Imie) && Nazwisko.equalsIgnoreCase(((Nauczyciel) obj).Nazwisko);
+        return id == (obj).id && Imie.equalsIgnoreCase((obj).Imie) && Nazwisko.equalsIgnoreCase(( obj).Nazwisko);
     }
 
 }
