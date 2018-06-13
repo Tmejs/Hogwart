@@ -66,7 +66,7 @@ public class NauczycielManagerMockTest {
         manager = new NauczycielManagerImpl();
         ((NauczycielManagerImpl) manager).connection = connectionMock;
         verify(connectionMock).prepareStatement("INSERT INTO Nauczyciel (id,imie, nazwisko) VALUES (?,?, ?)");
-        verify(connectionMock).prepareStatement("SELECT id, name, yob FROM Nauczyciel");
+        verify(connectionMock).prepareStatement("SELECT id, imie, nazwisko FROM Nauczyciel");
     }
 
     @Test
@@ -79,7 +79,7 @@ public class NauczycielManagerMockTest {
         nauczyciel.Nazwisko = "Nazwisko";
         assertEquals(1, manager.addNauczyciel(nauczyciel));
         verify(insertStatementMock, times(1)).setInt(1, 1);
-        verify(insertStatementMock, times(1)).setString(2, "Waclaw");
+        verify(insertStatementMock, times(1)).setString(2, "Imie");
         verify(insertStatementMock, times(1)).setString(3, "Nazwisko");
         verify(insertStatementMock).executeUpdate();
     }
@@ -138,8 +138,8 @@ public class NauczycielManagerMockTest {
         assertEquals(1, manager.addNauczyciel(nauczyciel));
 
         inorder.verify(insertStatementMock, times(1)).setInt(1, 1);
-        inorder.verify(insertStatementMock, times(1)).setString(2, "Waclaw");
-        inorder.verify(insertStatementMock, times(1)).setString(3, "Nazwisko");
+        inorder.verify(insertStatementMock, times(1)).setString(2, "imie");
+        inorder.verify(insertStatementMock, times(1)).setString(3, "nazwisko");
         inorder.verify(insertStatementMock).executeUpdate();
     }
 
