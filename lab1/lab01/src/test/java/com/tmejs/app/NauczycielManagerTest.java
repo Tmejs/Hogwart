@@ -35,51 +35,51 @@ import org.junit.Before;
  */
 @RunWith(JUnit4.class)
 public class NauczycielManagerTest {
-    
+
     NauczycielManager nauczycielManager;
     Nauczyciel nauczyciel;
-    
+
     public NauczycielManagerTest() throws SQLException {
 //        String url = "jdbc:hsqldb:hsql://localhost/workdb";
 
     }
-    
+
     @Before
     public void initRepository() throws Exception {
         nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
-        
+
         nauczyciel = new Nauczyciel();
         Nauczyciel nauczyciel2 = new Nauczyciel();
         Nauczyciel nauczyciel3 = new Nauczyciel();
         Nauczyciel nauczyciel4 = new Nauczyciel();
-        
+
         nauczyciel.id = 1;
         nauczyciel.Imie = "Jeden";
         nauczyciel.Nazwisko = "1Nazwisko";
-        
+
         nauczyciel2.id = 2;
         nauczyciel2.Imie = "Dwa";
         nauczyciel2.Nazwisko = "2Nazwisko";
-        
+
         nauczyciel3.id = 3;
         nauczyciel3.Imie = "trzzy";
         nauczyciel3.Nazwisko = "3Nazwisko";
-        
+
         nauczyciel4.id = 4;
         nauczyciel4.Imie = "cztery";
         nauczyciel4.Nazwisko = "4Nazwisko";
-        
+
         nauczycielManager.addNauczyciel(nauczyciel);
         nauczycielManager.addNauczyciel(nauczyciel2);
         nauczycielManager.addNauczyciel(nauczyciel3);
         nauczycielManager.addNauczyciel(nauczyciel4);
     }
-    
+
     @Test
     public void checkTable() throws Exception {
         assertTrue(nauczycielManager.isDatabaseReady());
     }
-    
+
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();
@@ -91,9 +91,9 @@ public class NauczycielManagerTest {
         //Sprawdzenie czy poprawnie dodany
         Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
-        
+
     }
-    
+
     @Test
     public void checkUpdating() {
 
@@ -107,10 +107,10 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertTrue(newNauczycielTest.equals(nauczycielManager.getNauczyciel(newNauczycielTest.id)));
-        
+        assertTrue(nauczyciel.Imie.equalsIgnoreCase(newNauczycielTest.Imie) && nauczyciel.Nazwisko.equalsIgnoreCase(newNauczycielTest.Nazwisko));
+
     }
-    
+
     @Test
     public void checkDelete() {
         Nauczyciel nauczyciel = new Nauczyciel();
@@ -122,14 +122,14 @@ public class NauczycielManagerTest {
         //Sprawdzenie czy nie usuneliśmy wszystkich
         assertFalse(nauczycielManager.getAllNauczyciels().isEmpty());
     }
-    
+
     @Test
     public void checkGet() {
         //Sprawdzenie czy go zwraca
         Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
-        
-        assertTrue(nauczyciel.equals(newNauczyciel));
+
+        assertTrue(nauczyciel.Imie.equalsIgnoreCase(newNauczyciel.Imie) && nauczyciel.Nazwisko.equalsIgnoreCase(newNauczyciel.Nazwisko));
     }
-    
+
 }
