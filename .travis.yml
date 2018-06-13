@@ -6,4 +6,4 @@ before_script:
 - cd scripts; ./server.sh &
 script:
 - sleep 1
-- cd ..; mvn test
+- cd ../lab1/lab01; mvn test
