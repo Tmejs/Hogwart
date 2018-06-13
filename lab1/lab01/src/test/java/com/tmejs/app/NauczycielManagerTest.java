@@ -119,12 +119,12 @@ public class NauczycielManagerTest {
         //Dodajemu nowego nauczyciela
         Nauczyciel nauczyciel = new Nauczyciel();
 
+        nauczyciel.id=1;
         nauczyciel.Imie = "ImieGet";
         nauczyciel.Nazwisko = "NazwiskoGet";
-        Integer id = nauczycielManager.addNauczyciel(nauczyciel);
-        assertNotNull(id);
+        
         //Sprawdzenie czy go zwraca
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
 
         assertEquals(nauczyciel.Imie, newNauczyciel.Imie);

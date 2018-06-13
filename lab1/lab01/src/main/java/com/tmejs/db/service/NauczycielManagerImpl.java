@@ -107,7 +107,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     public void setConnection(Connection connection) throws SQLException {
         addNauczycielStmt = connection.
                     prepareStatement("INSERT INTO "
-                        + "Nauczyciel (imie, nazwisko) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
+                        + "Nauczyciel (imie, nazwisko) VALUES (?, ?)");
 
         getAllNauczycielsStmt = connection.
                 prepareStatement("select * from "
