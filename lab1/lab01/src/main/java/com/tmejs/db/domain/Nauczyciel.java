@@ -10,4 +10,15 @@ public class Nauczyciel {
     public String Imie;
     public String Nazwisko;
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Nauczyciel){
+            return id==((Nauczyciel) obj).id && Imie.equalsIgnoreCase(((Nauczyciel) obj).Imie) && Nazwisko.equalsIgnoreCase(((Nauczyciel) obj).Nazwisko);
+        }else{
+            return super.equals(obj);
+        }
+    }
+    
+    
+
 }
