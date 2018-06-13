@@ -107,10 +107,8 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertEquals(newNauczycielTest.Imie, nauczycielManager.getNauczyciel(newNauczycielTest.id));
+        assertEquals(newNauczycielTest, nauczycielManager);
 
-        //Sprawdzenie czy nie update innychpozycji
-        assertEquals(newNauczycielTest.Imie, nauczycielManager.getNauczyciel(new Long(2)).Imie);
 
     }
 
@@ -128,21 +126,11 @@ public class NauczycielManagerTest {
 
     @Test
     public void checkGet() {
-
-        //Dodajemu nowego nauczyciela
-        Nauczyciel nauczyciel = new Nauczyciel();
-
-        nauczyciel.id=1;
-        nauczyciel.Imie = "ImieGet";
-        nauczyciel.Nazwisko = "NazwiskoGet";
-        
         //Sprawdzenie czy go zwraca
         Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
 
-        assertEquals(nauczyciel.Imie, newNauczyciel.Imie);
-        assertEquals(nauczyciel.Nazwisko, newNauczyciel.Nazwisko);
-        //Sprawdzeonie czy jest taki sam jak wcześniej dodany
+        assertTrue(nauczyciel.equals(newNauczyciel));
     }
 
 }
