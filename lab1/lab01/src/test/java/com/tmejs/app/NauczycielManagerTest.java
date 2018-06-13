@@ -107,8 +107,9 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertEquals(nauczyciel.Imie,newNauczycielTest.Imie);
-        assertEquals(nauczyciel.Nazwisko, newNauczycielTest.Nazwisko);
+        Nauczyciel downloaded = nauczycielManager.getNauczyciel(newNauczycielTest.id);
+        assertEquals(downloaded.Imie,newNauczycielTest.Imie);
+        assertEquals(downloaded.Nazwisko, newNauczycielTest.Nazwisko);
 
     }
 

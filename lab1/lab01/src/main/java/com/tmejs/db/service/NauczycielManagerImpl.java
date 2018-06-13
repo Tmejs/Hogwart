@@ -133,18 +133,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
             addNauczycielStmt.setString(2, person.Imie);
             addNauczycielStmt.setString(3, person.Nazwisko);
             count = addNauczycielStmt.executeUpdate();
-            int affectedRows = addNauczycielStmt.executeUpdate();
-
-            if (affectedRows == 0) {
-                throw new SQLException("Creating user failed, no rows affected.");
-            }
-
-            try (ResultSet rs = addNauczycielStmt.getGeneratedKeys()) {
-                if (rs.next()) {
-                    count = rs.getInt(1);
-                }
-                rs.close();
-            }
+           
         } catch (SQLException e) {
             throw new IllegalStateException(e.getMessage() + "\n" + e.getStackTrace().toString());
         }
