@@ -38,6 +38,7 @@ public class NauczycielManagerTest {
 
     NauczycielManager nauczycielManager;
     Nauczyciel nauczyciel;
+
     public NauczycielManagerTest() throws SQLException {
 //        String url = "jdbc:hsqldb:hsql://localhost/workdb";
 
@@ -46,43 +47,43 @@ public class NauczycielManagerTest {
     @Before
     public void initRepository() throws Exception {
         nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
-        
+
         nauczyciel = new Nauczyciel();
         Nauczyciel nauczyciel2 = new Nauczyciel();
         Nauczyciel nauczyciel3 = new Nauczyciel();
         Nauczyciel nauczyciel4 = new Nauczyciel();
-        
-        nauczyciel.id=1;
-        nauczyciel.Imie="Jeden";
-        nauczyciel.Nazwisko="1Nazwisko";
-        
-        nauczyciel2.id=2;
-        nauczyciel2.Imie="Dwa";
-        nauczyciel2.Nazwisko="2Nazwisko";
-        
-        nauczyciel3.id=3;
-        nauczyciel3.Imie="trzzy";
-        nauczyciel3.Nazwisko="3Nazwisko";
-        
-        nauczyciel4.id=4;
-        nauczyciel4.Imie="cztery";
-        nauczyciel4.Nazwisko="4Nazwisko";
-        
+
+        nauczyciel.id = 1;
+        nauczyciel.Imie = "Jeden";
+        nauczyciel.Nazwisko = "1Nazwisko";
+
+        nauczyciel2.id = 2;
+        nauczyciel2.Imie = "Dwa";
+        nauczyciel2.Nazwisko = "2Nazwisko";
+
+        nauczyciel3.id = 3;
+        nauczyciel3.Imie = "trzzy";
+        nauczyciel3.Nazwisko = "3Nazwisko";
+
+        nauczyciel4.id = 4;
+        nauczyciel4.Imie = "cztery";
+        nauczyciel4.Nazwisko = "4Nazwisko";
+
         nauczycielManager.addNauczyciel(nauczyciel);
         nauczycielManager.addNauczyciel(nauczyciel2);
         nauczycielManager.addNauczyciel(nauczyciel3);
         nauczycielManager.addNauczyciel(nauczyciel4);
     }
 
-    
     @Test
-    public void checkTable() throws Exception{
+    public void checkTable() throws Exception {
         assertTrue(nauczycielManager.isDatabaseReady());
     }
+
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id=10;
+        nauczyciel.id = 10;
         nauczyciel.Imie = "addImie";
         nauczyciel.Nazwisko = "addNaziwso";
         Integer id = nauczycielManager.addNauczyciel(nauczyciel);
@@ -98,17 +99,15 @@ public class NauczycielManagerTest {
 
         //Kontrolny do sprawdzenia czy nie za duzo update
         Nauczyciel newNauczycielTest = new Nauczyciel();
-        newNauczycielTest.id=1;
+        newNauczycielTest.id = 1;
         newNauczycielTest.Imie = "testUpdate";
         newNauczycielTest.Nazwisko = "testUpate";
-        
 
         //Update
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertEquals(newNauczycielTest, nauczycielManager);
-
+        assertTrue(newNauczycielTest.equals(nauczycielManager));
 
     }
 
