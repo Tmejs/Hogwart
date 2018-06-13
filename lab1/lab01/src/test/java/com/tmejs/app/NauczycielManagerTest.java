@@ -48,6 +48,11 @@ public class NauczycielManagerTest {
         nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
     }
 
+    
+    @Test
+    public void checkTable() throws Exception{
+        assertTrue(nauczycielManager.isDatabaseReady());
+    }
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();

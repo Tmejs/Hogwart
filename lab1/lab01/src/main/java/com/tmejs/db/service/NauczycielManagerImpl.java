@@ -47,6 +47,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
         if (!isDatabaseReady()) {
 //            createDatabase();
             createTables();
+            
         }
 
     }

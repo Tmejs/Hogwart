@@ -40,4 +40,5 @@ public interface NauczycielManager {
     public Boolean deleteNauczyciel(Nauczyciel nauczyciel);
     
     public List<Nauczyciel> getAllNauczyciels();
+    public boolean isDatabaseReady();
 }
