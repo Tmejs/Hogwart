@@ -37,7 +37,7 @@ import org.junit.Before;
 public class NauczycielManagerTest {
 
     NauczycielManager nauczycielManager;
-
+    Nauczyciel nauczyciel;
     public NauczycielManagerTest() throws SQLException {
 //        String url = "jdbc:hsqldb:hsql://localhost/workdb";
 
@@ -46,6 +46,32 @@ public class NauczycielManagerTest {
     @Before
     public void initRepository() throws Exception {
         nauczycielManager = new NauczycielManagerImpl("workdb", "root", "root");
+        
+        nauczyciel = new Nauczyciel();
+        Nauczyciel nauczyciel2 = new Nauczyciel();
+        Nauczyciel nauczyciel3 = new Nauczyciel();
+        Nauczyciel nauczyciel4 = new Nauczyciel();
+        
+        nauczyciel.id=1;
+        nauczyciel.Imie="Jeden";
+        nauczyciel.Nazwisko="1Nazwisko";
+        
+        nauczyciel2.id=2;
+        nauczyciel2.Imie="Dwa";
+        nauczyciel2.Nazwisko="2Nazwisko";
+        
+        nauczyciel3.id=3;
+        nauczyciel3.Imie="trzzy";
+        nauczyciel3.Nazwisko="3Nazwisko";
+        
+        nauczyciel4.id=4;
+        nauczyciel4.Imie="cztery";
+        nauczyciel4.Nazwisko="4Nazwisko";
+        
+        nauczycielManager.addNauczyciel(nauczyciel);
+        nauczycielManager.addNauczyciel(nauczyciel2);
+        nauczycielManager.addNauczyciel(nauczyciel3);
+        nauczycielManager.addNauczyciel(nauczyciel4);
     }
 
     
@@ -56,48 +82,35 @@ public class NauczycielManagerTest {
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();
+        nauczyciel.id=10;
         nauczyciel.Imie = "addImie";
         nauczyciel.Nazwisko = "addNaziwso";
         Integer id = nauczycielManager.addNauczyciel(nauczyciel);
-        System.out.println("ID:  " + id);
-        assertNotNull(id);
 
         //Sprawdzenie czy poprawnie dodany
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(Long.decode("44"));
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
 
     }
 
     @Test
     public void checkUpdating() {
-        Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.Imie = "addImieUpdate";
-        nauczyciel.Nazwisko = "addNaziwsoUpdate";
-        Integer id = nauczycielManager.addNauczyciel(nauczyciel);
-        
-        
-        //Pobranie iinego nauczyciel an potrzeby testu
-        Nauczyciel testNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
-        testNauczyciel.Imie = testNauczyciel.Imie + "pUpdate";
 
         //Kontrolny do sprawdzenia czy nie za duzo update
         Nauczyciel newNauczycielTest = new Nauczyciel();
+        newNauczycielTest.id=1;
         newNauczycielTest.Imie = "testUpdate";
         newNauczycielTest.Nazwisko = "testUpate";
-        Integer newId = nauczycielManager.addNauczyciel(newNauczycielTest);
+        
 
         //Update
-        assertTrue(nauczycielManager.updateNauczyciel(testNauczyciel));
-
-        //Pobranie nauczyciela w celu sprawdzenia czy poszedł update
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(id.longValue());
-        Nauczyciel newNauczycielTestToTest = nauczycielManager.getNauczyciel(newId.longValue());
+        assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertEquals(testNauczyciel.Imie, newNauczyciel.Imie);
+        assertEquals(newNauczycielTest.Imie, nauczycielManager.getNauczyciel(newNauczycielTest.id));
 
         //Sprawdzenie czy nie update innychpozycji
-        assertEquals(newNauczycielTest.Imie, newNauczycielTestToTest.Imie);
+        assertEquals(newNauczycielTest.Imie, nauczycielManager.getNauczyciel(new Long(2)).Imie);
 
     }
 
