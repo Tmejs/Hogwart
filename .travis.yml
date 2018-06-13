@@ -1,11 +1,9 @@
-
-services:
-  - mysql
-  
-before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS wordkb;'
- 
- language: java
-
+language: java
+notifications:
+    email: false
+install: true
+before_script:
+- cd scripts; ./server.sh &
 script:
- - cd lab1/lab01; mvn test
+- sleep 1
+- cd ..; mvn test
