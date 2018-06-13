@@ -51,13 +51,11 @@ public class NauczycielManagerImpl implements NauczycielManager {
         setConnection(connection);
     }
 
-    
-    public void createDatabase() throws SQLException{
+    public void createDatabase() throws SQLException {
         PreparedStatement ps = connection.prepareStatement("CREATE DATABASE databasename");
         int result = ps.executeUpdate();
     }
-    
-    
+
     private static Connection getConnection(String database, String login, String password) throws Exception {
         // This will load the MySQL driver, each DB has its own driver
 //        try {
@@ -71,8 +69,8 @@ public class NauczycielManagerImpl implements NauczycielManager {
                 .getConnection("jdbc:hsqldb:hsql://localhost/workdb");
     }
 
-    public NauczycielManagerImpl() throws Exception {
-        throw new Exception("Zdefiniuj połączenie z bazą");
+    public NauczycielManagerImpl() {
+
     }
 
     public void createTables() throws SQLException {
@@ -106,7 +104,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     @Override
     public void setConnection(Connection connection) throws SQLException {
         addNauczycielStmt = connection.
-                    prepareStatement("INSERT INTO "
+                prepareStatement("INSERT INTO "
                         + "Nauczyciel (id,imie, nazwisko) VALUES (?, ?, ?)");
 
         getAllNauczycielsStmt = connection.
@@ -126,14 +124,14 @@ public class NauczycielManagerImpl implements NauczycielManager {
     }
 
     @Override
-    public Integer addNauczyciel(Nauczyciel person) {
+    public int addNauczyciel(Nauczyciel person) {
         int count = 0;
         try {
             addNauczycielStmt.setLong(1, person.id);
             addNauczycielStmt.setString(2, person.Imie);
             addNauczycielStmt.setString(3, person.Nazwisko);
             count = addNauczycielStmt.executeUpdate();
-           
+
         } catch (SQLException e) {
             throw new IllegalStateException(e.getMessage() + "\n" + e.getStackTrace().toString());
         }

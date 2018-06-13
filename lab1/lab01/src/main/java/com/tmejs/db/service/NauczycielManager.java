@@ -31,7 +31,7 @@ public interface NauczycielManager {
 
     public void setConnection(Connection connection) throws SQLException;
 
-    public Integer addNauczyciel(Nauczyciel person);
+    public int addNauczyciel(Nauczyciel person);
     
     public Nauczyciel getNauczyciel(Long id);
     
