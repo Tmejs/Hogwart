@@ -107,7 +107,8 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        assertTrue(nauczyciel.Imie.equalsIgnoreCase(newNauczycielTest.Imie) && nauczyciel.Nazwisko.equalsIgnoreCase(newNauczycielTest.Nazwisko));
+        assertEquals(nauczyciel.Imie,newNauczycielTest.Imie);
+        assertEquals(nauczyciel.Nazwisko, newNauczycielTest.Nazwisko);
 
     }
 
@@ -129,7 +130,8 @@ public class NauczycielManagerTest {
         Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
         assertNotNull(newNauczyciel);
 
-        assertTrue(nauczyciel.Imie.equalsIgnoreCase(newNauczyciel.Imie) && nauczyciel.Nazwisko.equalsIgnoreCase(newNauczyciel.Nazwisko));
+       assertEquals(nauczyciel.Imie,newNauczyciel.Imie);
+       assertEquals(nauczyciel.Nazwisko, newNauczyciel.Nazwisko);
     }
 
 }
