@@ -10,6 +10,16 @@ public class Nauczyciel {
     public String Imie;
     public String Nazwisko;
 
+    public Nauczyciel(Integer id, String imie, String nazwisko) {
+        this.id = id;
+        Imie = imie;
+        Nazwisko = nazwisko;
+    }
+
+    public Nauczyciel() {
+
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Nauczyciel) {

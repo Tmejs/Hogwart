@@ -25,11 +25,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author Tmejs
  */
+@Component
 public class NauczycielManagerImpl implements NauczycielManager {
 
     public Connection connection;
@@ -69,8 +71,14 @@ public class NauczycielManagerImpl implements NauczycielManager {
                 .getConnection("jdbc:hsqldb:hsql://localhost/workdb");
     }
 
-    public NauczycielManagerImpl() {
-
+    public NauczycielManagerImpl() throws Exception{
+        dbName = "workdb";
+        connection = getConnection(null,null,null);
+        if (!isDatabaseReady()) {
+//            createDatabase();
+            createTables();
+        }
+        setConnection(connection);
     }
 
     public void createTables() throws SQLException {
@@ -183,7 +191,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     }
 
     @Override
-    public Nauczyciel getNauczyciel(Long id) {
+    public Nauczyciel getNauczyciel(Integer id) {
         Nauczyciel p = new Nauczyciel();
         try {
             getNauczycielStmt.setInt(1, id.intValue());

@@ -33,7 +33,7 @@ public interface NauczycielManager {
 
     public int addNauczyciel(Nauczyciel person);
     
-    public Nauczyciel getNauczyciel(Long id);
+    public Nauczyciel getNauczyciel(Integer id);
     
     public Boolean updateNauczyciel(Nauczyciel nauczyciel);
     
