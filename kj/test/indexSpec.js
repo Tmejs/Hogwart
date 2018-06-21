@@ -1,41 +1,42 @@
 describe("cenzor", function () {
     jasmine.clock().install();
 
-    beforeEach(function () {
+     beforeEach( function () {
         let s = spyOn(console, 'log').and.callThrough();
         $('body').append(`
-        <div id="tocenzor">Do ocenzurowania</div>
-        <div class="tcz">A</div>
-        <div class="tcz">B</div>
-        `);
+
+        <input class="inp"><input>
+         <input class="inp2"><input>
+              `);
+    });
+
+    it("text litery walidacja", function () {
+        $('.inp').setText("abcd");
+        $('.inp').validate('\d+');
+        expect($('.inp').css("background-color")).toEqual("rgb(255, 0, 0)");
+    });
+
+    it("text cyfry walidacja", function () {
+        $('.inp').setText('1234');
+        $('.inp').validate('\d+');
+        expect($('.inp').css("background-color")).toEqual("rgb(189, 183, 107)");
+
+    });
+
+
+    it("text cyfry anty walidacja", function () {
+        $('.inp').setText('1234');
+        $('.inp').validate('\d+');
+        $('.inp2').setText('abcd');
+        $('.inp2').validate('\d+');
+
+
+        expect($('.inp').css("background-color")).toEqual("rgb(189, 183, 107)");
+        expect($('.inp2').css("background-color")).toEqual("rgb(255, 0, 0)");
+
     });
 
     afterEach(function () {
-        $('#tocenzor').remove();
-    });
-
-    it("shold cenzor text", function () {
-        $('#tocenzor').cenzor();
-        expect($('#tocenzor').text()).toEqual('--censored--');
-    });
-
-    it("shold cenzor every text", function () {
-        $('.tcz').cenzor();
-        expect($('.tcz').first().text()).toEqual('--censored--');
-        expect($('#tocenzor').text()).not.toBe('--censored--');
-    });
-
-
-    it("shold handle clock properly", function () {
-        let dt = new Date(2017,10,10);
-        jasmine.clock().mockDate(dt);
-        jasmine.clock().tick(50);
-        expect(new Date().getTime()).toEqual(dt.getTime() + 50);
-    });    
-
-    it("shold call a spy", function () {
-        console.log("Hi");
-        expect(console.log).toHaveBeenCalled();
-        expect(console.log).toHaveBeenCalledWith(jasmine.any(String));
+        $('#tcz').remove();
     });
 });
