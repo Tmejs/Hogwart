@@ -6,12 +6,12 @@ package com.tmejs.db.domain;
  */
 public class Nauczyciel {
 
-    public Integer id;
+    public Integer Id;
     public String Imie;
     public String Nazwisko;
 
     public Nauczyciel(Integer id, String imie, String nazwisko) {
-        this.id = id;
+        this.Id = id;
         Imie = imie;
         Nazwisko = nazwisko;
     }
@@ -30,7 +30,18 @@ public class Nauczyciel {
     }
 
     public Boolean equals(Nauczyciel obj) {
-        return id == (obj).id && Imie.equalsIgnoreCase((obj).Imie) && Nazwisko.equalsIgnoreCase(( obj).Nazwisko);
+        return Id == (obj).Id && Imie.equalsIgnoreCase((obj).Imie) && Nazwisko.equalsIgnoreCase(( obj).Nazwisko);
     }
 
+    public Integer getId() {
+        return Id;
+    }
+
+    public String getImie() {
+        return Imie;
+    }
+
+    public String getNazwisko() {
+        return Nazwisko;
+    }
 }

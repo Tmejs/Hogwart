@@ -21,7 +21,7 @@ import com.tmejs.db.domain.Nauczyciel;
 import com.tmejs.db.service.NauczycielManager;
 import com.tmejs.db.service.NauczycielManagerImpl;
 import static org.junit.Assert.*;
-import org.junit.Ignore;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -53,19 +53,19 @@ public class NauczycielManagerTest {
         Nauczyciel nauczyciel3 = new Nauczyciel();
         Nauczyciel nauczyciel4 = new Nauczyciel();
         
-        nauczyciel.id = 1;
+        nauczyciel.Id = 1;
         nauczyciel.Imie = "Jeden";
         nauczyciel.Nazwisko = "1Nazwisko";
         
-        nauczyciel2.id = 2;
+        nauczyciel2.Id = 2;
         nauczyciel2.Imie = "Dwa";
         nauczyciel2.Nazwisko = "2Nazwisko";
         
-        nauczyciel3.id = 3;
+        nauczyciel3.Id = 3;
         nauczyciel3.Imie = "trzzy";
         nauczyciel3.Nazwisko = "3Nazwisko";
         
-        nauczyciel4.id = 4;
+        nauczyciel4.Id = 4;
         nauczyciel4.Imie = "cztery";
         nauczyciel4.Nazwisko = "4Nazwisko";
         
@@ -83,13 +83,13 @@ public class NauczycielManagerTest {
     @Test
     public void checkAdding() {
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 10;
+        nauczyciel.Id = 10;
         nauczyciel.Imie = "addImie";
         nauczyciel.Nazwisko = "addNaziwso";
         Integer id = nauczycielManager.addNauczyciel(nauczyciel);
 
         //Sprawdzenie czy poprawnie dodany
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.Id);
         assertNotNull(newNauczyciel);
         
     }
@@ -99,7 +99,7 @@ public class NauczycielManagerTest {
 
         //Kontrolny do sprawdzenia czy nie za duzo update
         Nauczyciel newNauczycielTest = new Nauczyciel();
-        newNauczycielTest.id = 1;
+        newNauczycielTest.Id = 1;
         newNauczycielTest.Imie = "testUpdate";
         newNauczycielTest.Nazwisko = "testUpate";
 
@@ -107,7 +107,7 @@ public class NauczycielManagerTest {
         assertTrue(nauczycielManager.updateNauczyciel(newNauczycielTest));
 
         //Sprawdzenie update
-        Nauczyciel downloaded = nauczycielManager.getNauczyciel(newNauczycielTest.id);
+        Nauczyciel downloaded = nauczycielManager.getNauczyciel(newNauczycielTest.Id);
         assertEquals(downloaded.Imie, newNauczycielTest.Imie);
         assertEquals(downloaded.Nazwisko, newNauczycielTest.Nazwisko);
         
@@ -118,11 +118,11 @@ public class NauczycielManagerTest {
     @Test
     public void checkDelete() {
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 500;
+        nauczyciel.Id = 500;
         nauczyciel.Imie = "addImie";
         nauczyciel.Nazwisko = "addNaziwso";
         nauczycielManager.addNauczyciel(nauczyciel);
-        assertNotNull(nauczycielManager.getNauczyciel(nauczyciel.id));
+        assertNotNull(nauczycielManager.getNauczyciel(nauczyciel.Id));
         assertTrue(nauczycielManager.deleteNauczyciel(nauczyciel));
 
         //Sprawdzenie czy nie usuneliśmy wszystkich
@@ -132,7 +132,7 @@ public class NauczycielManagerTest {
     @Test
     public void checkGet() {
         //Sprawdzenie czy go zwraca
-        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.id);
+        Nauczyciel newNauczyciel = nauczycielManager.getNauczyciel(nauczyciel.Id);
         assertNotNull(newNauczyciel);
         
         assertEquals(nauczyciel.Imie, newNauczyciel.Imie);

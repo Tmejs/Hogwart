@@ -1,0 +1,814 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 14:46:03.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:02.35
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 14:46:05.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.55
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 14:48:38.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.55
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 14:48:39.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.55
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:01:58.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.73
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:01:58.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:04:46.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.76
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:04:47.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.62
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:06:05.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.56
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:06:05.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:07:13.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.55
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:07:13.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.60
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:07:56.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.58
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:07:57.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.78
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:08:01.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.63
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:08:02.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.58
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:10:36.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.85
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:10:37.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.97
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:11:48.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.59
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:11:49.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.61
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:16:20.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.74
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 20.06.2018 15:16:21.
+Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  D:\Visual Studio\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1158: cannot run 'rc.exe' [D:\Studia\TAU\Hogwart\wyklad12-catch2\example1\build\CMakeFiles\3.12.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.57
+
+

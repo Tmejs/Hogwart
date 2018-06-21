@@ -22,15 +22,11 @@ import com.tmejs.db.service.NauczycielManagerImpl;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 import org.mockito.InOrder;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.sql.*;
@@ -38,8 +34,6 @@ import java.sql.*;
 import java.sql.SQLException;
 
 import static org.mockito.AdditionalMatchers.gt;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 /**
@@ -63,7 +57,7 @@ public class NauczycielManagerMockTest {
     PreparedStatement selectStatementMock;
 
     @Before
-    public void setupDatabase() throws SQLException {
+    public void setupDatabase() throws Exception {
 
         when(connectionMock.prepareStatement("INSERT INTO Nauczyciel (id,imie,nazwisko) VALUES (?,?,?)")).thenReturn(insertStatementMock);
         when(connectionMock.prepareStatement("SELECT * FROM Nauczyciel")).thenReturn(selectStatementMock);
@@ -83,7 +77,7 @@ public class NauczycielManagerMockTest {
         when(insertStatementMock.executeUpdate()).thenReturn(1);
 
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
+        nauczyciel.Id = 1;
         nauczyciel.Imie = "imie";
         nauczyciel.Nazwisko = "nazwisko";
         manager.addNauczyciel(nauczyciel);
@@ -123,7 +117,7 @@ public class NauczycielManagerMockTest {
     public void checkGetting() throws Exception {
         AbstractResultSet mockedResultSet = mock(AbstractResultSet.class);
         when(mockedResultSet.next()).thenCallRealMethod();
-        when(mockedResultSet.getInt("id")).thenCallRealMethod();
+        when(mockedResultSet.getInt("Id")).thenCallRealMethod();
         when(mockedResultSet.getString("imie")).thenCallRealMethod();
         when(mockedResultSet.getString("nazwisko")).thenCallRealMethod();
         when(selectStatementMock.executeQuery()).thenReturn(mockedResultSet);
@@ -131,7 +125,7 @@ public class NauczycielManagerMockTest {
         assertEquals(1, manager.getAllNauczyciels().size());
 
         verify(selectStatementMock, times(1)).executeQuery();
-        verify(mockedResultSet, times(1)).getInt("id");
+        verify(mockedResultSet, times(1)).getInt("Id");
         verify(mockedResultSet, times(1)).getString("imie");
         verify(mockedResultSet, times(1)).getString("nazwisko");
         verify(mockedResultSet, times(2)).next();
@@ -143,7 +137,7 @@ public class NauczycielManagerMockTest {
         when(insertStatementMock.executeUpdate()).thenReturn(1);
 
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
+        nauczyciel.Id = 1;
         nauczyciel.Imie = "imie";
         nauczyciel.Nazwisko = "nazwisko";
         assertEquals(1, manager.addNauczyciel(nauczyciel));
@@ -158,7 +152,7 @@ public class NauczycielManagerMockTest {
     public void checkExceptionWhenAddingNullAdding() throws Exception {
         when(insertStatementMock.executeUpdate()).thenThrow(new SQLException());
         Nauczyciel nauczyciel = new Nauczyciel();
-        nauczyciel.id = 1;
+        nauczyciel.Id = 1;
         nauczyciel.Imie = null;
         nauczyciel.Nazwisko = "Nazwisko";
         assertEquals(1, manager.addNauczyciel(nauczyciel));

@@ -1,0 +1,17 @@
+h1{
+    color:#0000FF;
+}
+
+h2{
+    color:#FF0000;
+}
+
+#wgtmsr{
+    width:150px;
+}
+
+select#wgmstr {
+    max-width: 50px;
+    min-width: 50px;
+    width: 50px !important;
+}

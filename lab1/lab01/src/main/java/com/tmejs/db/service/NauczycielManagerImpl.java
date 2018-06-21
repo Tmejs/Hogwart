@@ -22,7 +22,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 import org.springframework.stereotype.Component;
@@ -135,7 +134,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     public int addNauczyciel(Nauczyciel person) {
         int count = 0;
         try {
-            addNauczycielStmt.setInt(1, (int) person.id);
+            addNauczycielStmt.setInt(1, (int) person.Id);
             addNauczycielStmt.setString(2, person.Imie);
             addNauczycielStmt.setString(3, person.Nazwisko);
             count = addNauczycielStmt.executeUpdate();
@@ -154,7 +153,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
 
             while (rs.next()) {
                 Nauczyciel p = new Nauczyciel();
-                p.id = rs.getInt("id");
+                p.Id = rs.getInt("Id");
                 p.Imie = rs.getString("imie");
                 p.Nazwisko = rs.getString("nazwisko");
                 nauczyciels.add(p);
@@ -171,7 +170,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
         try {
             updateNauczycielsStmt.setString(1, nauczyciel.Imie);
             updateNauczycielsStmt.setString(2, nauczyciel.Nazwisko);
-            updateNauczycielsStmt.setLong(3, nauczyciel.id);
+            updateNauczycielsStmt.setLong(3, nauczyciel.Id);
             updateNauczycielsStmt.executeUpdate();
             return true;
         } catch (SQLException e) {
@@ -182,7 +181,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
     @Override
     public Boolean deleteNauczyciel(Nauczyciel nauczyciel) {
         try {
-            deleteNauczycielsStmt.setLong(1, nauczyciel.id);
+            deleteNauczycielsStmt.setLong(1, nauczyciel.Id);
             deleteNauczycielsStmt.execute();
             return true;
         } catch (SQLException e) {
@@ -198,7 +197,7 @@ public class NauczycielManagerImpl implements NauczycielManager {
             ResultSet rs = getNauczycielStmt.executeQuery();
 
             while (rs.next()) {
-                p.id = (int) rs.getLong("id");
+                p.Id = (int) rs.getLong("Id");
                 p.Imie = rs.getString("imie");
                 p.Nazwisko = rs.getString("nazwisko");
             }
