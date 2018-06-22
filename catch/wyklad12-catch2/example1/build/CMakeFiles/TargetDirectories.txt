@@ -1,0 +1,10 @@
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/install/strip.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/install.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/install/local.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/test.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/rebuild_cache.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/check.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/edit_cache.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/tests.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/list_install_components.dir
+/Users/mac/IdeaProjects/Hogwart/catch/wyklad12-catch2/example1/build/CMakeFiles/fastrpn.dir

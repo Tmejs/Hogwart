@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lab01" />
+        <module name="selenium" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lab01" target="1.8" />
+      <module name="selenium" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

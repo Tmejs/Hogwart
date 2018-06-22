@@ -59,7 +59,7 @@ public class AutomationPracticeTest {
     @Test
     public void successfulRegistrationTest() throws Exception {
         String email = "Testowy" + number() + "@gmail.com";
-        registration(email, "1", "Test", "Last", "21377", "Rolety tu i tam 22", "Ames", "17", "77722", "2", "500100900");
+        registration(email, "1", "Mateusz", "Rząd", "14876", "Adres", "Ames", "17", "77722", "2", "500100900");
     }
 
     @Test
