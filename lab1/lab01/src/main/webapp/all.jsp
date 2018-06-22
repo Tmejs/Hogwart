@@ -24,8 +24,6 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/dodaj"></a>Dodaj</li>
-                <li><a href="/usun">Usun</a></li>
                 <li class="active"><a href="/all">Wszyscy</a></li>
             </ul>
         </div>
